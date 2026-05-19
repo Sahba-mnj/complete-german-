@@ -26,7 +26,7 @@
     --secondary-color: #2a1517;
     --accent-light: #3a2023;
 
-    --text-dark: #f5f1f1;
+    --text-dark: ##ffd6dc;
     --text-light: #fff8f8;
 
     --bg-light: #120c0c;
@@ -115,6 +115,9 @@
             font-size: 1rem;
             transition: all 0.3s ease;
             background: white;
+            background:#2b1b1d;
+            color:#fff8f8;
+           border:2px solid #6d3b42;
         }
         .search-box:focus {
             outline: none;
@@ -185,6 +188,9 @@
             cursor: pointer;
             transition: all 0.2s;
             white-space: nowrap;
+            color:#ffb3c1;
+            border:2px solid #a8324a;
+            background:#2b1518;
         }
         .einheit-senden:hover {
             background: var(--primary-color);
@@ -285,6 +291,8 @@
             align-items: center;
             gap: 0.3rem;
             transition: color 0.2s;
+            color:#ff8fa3;
+            font-weight:600;
         }
         .card-oeffnen::after {
             content: '→';
@@ -304,6 +312,9 @@
             cursor: pointer;
             transition: all 0.2s;
             white-space: nowrap;
+            color:#ffb3c1;
+            border:1.5px solid #7b1e2b;
+            background:#2b1518;
         }
         .card-senden:hover {
             border-color: var(--primary-color);
@@ -962,7 +973,7 @@ document.getElementById('searchInput').addEventListener('input', function() {
             var titel = (card.dataset.titel || '').toLowerCase();
             var show = !q || titel.includes(q);
             card.style.display = show ? '' : 'none';
-            if (show) einheitHit = true;
+            if (show) einheitHit = true; backdrop-filter: blur(6px);
         });
         einheit.style.display = einheitHit ? '' : 'none';
         if (einheitHit) {
