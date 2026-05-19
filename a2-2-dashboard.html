@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A2.2 Deutsch – Kursübersicht</title>
-    <style>
-        :root {
-            --primary-color: #7C4DFF;
-            --primary-dark: #5C2DC9;
-            --secondary-color: #4A148C;
-            --accent-light: #F3E5F5;
-            --text-dark: #1A1A2E;
-            --text-light: #F5F0FF;
-            --bg-light: #F8F5FF;
-            --border-color: #D1C4E9;
+    <title>Deutsch with Sahba</title>
+   <style>
+.header-dog{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid rgba(255,255,255,0.2);
+    margin-bottom:1rem;
+    position:relative;
+    z-index:1;
+    box-shadow:0 6px 20px rgba(0,0,0,0.35);
+}
+
+:root {
+    --primary-color: #7b1e2b;
+    --primary-dark: #5a1520;
+    --secondary-color: #2a1517;
+    --accent-light: #3a2023;
+
+    --text-dark: #f5f1f1;
+    --text-light: #fff8f8;
+
+    --bg-light: #120c0c;
+    --border-color: #4a2b2f;
+
+    --shadow: 0 2px 8px rgba(0,0,0,0.25);
+    --shadow-hover: 0 8px 24px rgba(0,0,0,0.35);
+}
             --shadow: 0 2px 8px rgba(0,0,0,0.1);
             --shadow-hover: 0 8px 24px rgba(0,0,0,0.15);
         }
@@ -24,8 +42,7 @@
             font-size: 18px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--text-dark);
-            background: linear-gradient(135deg, var(--bg-light) 0%, #EDE7F6 100%);
-            min-height: 100vh;
+            background: linear-gradient(135deg, #120c0c 0%, #2a1517 100%);            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
@@ -111,11 +128,11 @@
             border-bottom: 3px solid var(--primary-color);
             cursor: pointer;
             border-radius: 10px 10px 0 0;
-            background: #f0ecff;
+            background: #2f1a1d;
             user-select: none;
             transition: background 0.2s;
         }
-        .einheit-header:hover { background: #e0d8ff; }
+        .einheit-header:hover { background: #2f1a1d; }
         .einheit-pfeil {
             margin-left: auto;
             font-size: 1.1rem;
@@ -178,7 +195,7 @@
 
         /* ── KARTE ── */
         .card {
-            background: white;
+            background: #211314;
             border-radius: 12px;
             padding: 1.4rem;
             box-shadow: var(--shadow);
@@ -398,9 +415,16 @@
 <body>
 
 <header class="header">
-    <a class="back-link" href="https://fabdaf.github.io/daf-a2-uebungen/a2-1-dashboard.html">← Zum A2.1-Dashboard</a>
-    <h1>A2.2 Deutsch – Kursübersicht</h1>
-    <p>7 Kurseinheiten · 58 interaktive Lektionen im Überblick</p>
+    <img src="dog-header.jpg" alt="Happy dog"
+    class="header-dog">
+
+    <a class="back-link" href="https://fabdaf.github.io/daf-a2-uebungen/a2-1-dashboard.html">
+    ← Zum A2.1-Dashboard
+    </a>
+
+    <h1>Deutsch with Sahba 🇩🇪</h1>
+
+    <p>German learning with emotional support from this dog.</p>
 </header>
 
 <div class="container">
